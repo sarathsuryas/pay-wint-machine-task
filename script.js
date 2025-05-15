@@ -1,3 +1,4 @@
+ document.addEventListener('DOMContentLoaded', function() {
 
 let currentPage = 1;
 const itemsPerPage = 6;
@@ -117,3 +118,38 @@ menuItems.forEach(item => {
 
     listContainer.appendChild(anchor);
 });
+
+
+    const paymentMethods = [
+      {
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjT1k-UiypgI080po56u-2w9BIle0rngmvA&s?height=30&width=40",
+        alt: "Visa"
+      },
+      {
+        src: "https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13674554/Mastercard_logo.jpg?quality=90&strip=all&crop=0,16.666666666667,100,66.666666666667?height=30&width=40",
+        alt: "Mastercard"
+      },
+      {
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPtiox0pzI-mDFVFtObDijoFgng0o56QbB4A&s?height=30&width=40",
+        alt: "Google Pay"
+      },
+      {
+        src: "https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2023/11/amex-logo.png?resize=2000%2C1311&ssl=1?height=30&width=40",
+        alt: "American Express"
+      },
+      {
+        src: "https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_640.png?height=30&width=40",
+        alt: "PayPal"
+      }
+    ];
+
+    const container = document.getElementById('paymentIcons');
+    
+    paymentMethods.forEach(payment => {
+      const img = document.createElement('img');
+      img.src = payment.src;
+      img.alt = payment.alt;
+      img.className = 'h-8';
+      container.appendChild(img);
+    });
+  });
