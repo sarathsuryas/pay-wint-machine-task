@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krist - My Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans">
+  <!-- Header -->
+
+  <header class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <a href="#" class="text-2xl font-bold">
+        <span class="text-3xl">K</span>Krist
+      </a>
+    </div>
+
+    <nav class="hidden md:flex space-x-6">
+      <a href="#" class="hover:text-gray-500">Home</a>
+      <a href="#" class="hover:text-gray-500 flex items-center">
+        Shop
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </a>
+      <a href="#" class="hover:text-gray-500">Our Story</a>
+      <a href="#" class="hover:text-gray-500">Blog</a>
+      <a href="#" class="hover:text-gray-500">Contact Us</a>
+    </nav>
+
+    <div class="flex items-center space-x-4">
+      <button class="hover:text-gray-500">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="hover:text-gray-500">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="hover:text-gray-500">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </button>
+      <button class="bg-black text-white px-4 py-2 rounded">
+        Login
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    
+
+    <h1 class="text-3xl font-bold mb-8">My Profile</h1>
+
+    <div class="flex flex-col md:flex-row gap-6">
+      <!-- Sidebar -->
+      <div class="w-full md:w-1/4">
+        <div class="border rounded-lg p-4 mb-4 flex items-center">
+          <div class="mr-4">
+            <img src="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?height=80&width=80" alt="Profile"
+              class="w-20 h-20 rounded-full">
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="text-sm mb-1">Hello 👋</p>
+            <p class="font-bold text-xl">Robert Fox</p>
+          </div>
+        </div>
+
+        <div class="space-y-1" id="list">
+      
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="w-full md:w-3/4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="productGrid">
+          <!-- Cards will be dynamically added here -->
+        </div>
+        <div id="pagination" class="flex justify-center mt-4 space-x-2">
+       <!-- Pagination buttons will be generated here -->
+        
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white mt-12 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Logo and Contact -->
+        <div>
+          <a href="#" class="text-2xl font-bold mb-4 block">
+            <span class="text-3xl">K</span>Krist
+          </a>
+          <div class="space-y-2 mt-4">
+            <p class="flex items-center">
+              <i class="fa-solid fa-phone w-6"></i>
+              (704) 555-0127
+            </p>
+            <p class="flex items-center">
+              <i class="fa-regular fa-envelope w-6"></i>
+              krist@example.com
+            </p>
+            <p class="flex items-start">
+              <i class="fa-solid fa-location-dot w-6 mt-1"></i>
+              <span>3891 Ranchview Dr. Richardson,<br>California 62639</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Information -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Information</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-300">My Account</a></li>
+            <li><a href="#" class="hover:text-gray-300">Login</a></li>
+            <li><a href="#" class="hover:text-gray-300">My Cart</a></li>
+            <li><a href="#" class="hover:text-gray-300">My Wishlist</a></li>
+            <li><a href="#" class="hover:text-gray-300">Checkout</a></li>
+          </ul>
+        </div>
+
+        <!-- Service -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Service</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+            <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+            <li><a href="#" class="hover:text-gray-300">Delivery Information</a></li>
+            <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-gray-300">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Subscribe</h3>
+          <p class="mb-4">Enter your email below to be the first to know about new collections and product launches.</p>
+          <div class="flex">
+            <input type="email" placeholder="Your Email"
+              class="px-4 py-2 w-full bg-gray-800 rounded-l focus:outline-none">
+            <button class="bg-white text-black px-4 py-2 rounded-r">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment and Social -->
+      <div class="flex flex-col md:flex-row justify-between items-center mt-8 pt-8 border-t border-gray-800">
+        <div class="flex space-x-2 mb-4 md:mb-0">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjT1k-UiypgI080po56u-2w9BIle0rngmvA&s?height=30&width=40"
+            alt="Visa" class="h-8">
+          <img
+            src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13674554/Mastercard_logo.jpg?quality=90&strip=all&crop=0,16.666666666667,100,66.666666666667?height=30&width=40"
+            alt="Mastercard" class="h-8">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPtiox0pzI-mDFVFtObDijoFgng0o56QbB4A&s?height=30&width=40"
+            alt="Google Pay" class="h-8">
+          <img
+            src="https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2023/11/amex-logo.png?resize=2000%2C1311&ssl=1?height=30&width=40"
+            alt="American Express" class="h-8">
+          <img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_640.png?height=30&width=40"
+            alt="PayPal" class="h-8">
+        </div>
+
+        <p class="text-sm text-gray-400">©2023 Krist All Rights are reserved</p>
+
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-gray-300">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="hover:text-gray-300">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="hover:text-gray-300">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
