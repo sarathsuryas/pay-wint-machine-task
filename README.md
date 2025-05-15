@@ -26,7 +26,7 @@ This repository contains the source code for a static e-commerce application bui
 - **Tailwind CSS**: For styling the interface.
 - **JavaScript**: Adds interactivity (pagination, hover effects, etc.).
 - **Font Awesome**: For icons used in the application.
-  
+- **Fetch Api**:Using Fetch api to fetch data of products 
 ---
 
 
